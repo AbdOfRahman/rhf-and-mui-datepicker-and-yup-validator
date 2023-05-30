@@ -8,7 +8,7 @@ function App() {
   const defaultValues = {
     userData: {
       name: "",
-      birthday: "30-05-2023",
+      birthday: "2023-05-30",
     },
   };
 
@@ -43,7 +43,7 @@ function App() {
               control={control}
               rules={{ required: true }}
               name="userData.birthday"
-              render={({ field }) => <DatePicker ref={field.ref} label="Birthday" onChange={field.onChange} value={new Date(field.value)} />}
+              render={({ field }) => <DatePicker ref={field.ref} label="Birthday" onChange={field.onChange} value={new Date(field.value)} format="yyyy-MM-dd" />}
             />
           </div>
         </div>
